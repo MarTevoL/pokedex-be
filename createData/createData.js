@@ -15,7 +15,7 @@ const createData = async () => {
     types: pokemon.Type2
       ? [pokemon.Type1.toLowerCase(), pokemon.Type2.toLowerCase()]
       : [pokemon.Type1.toLowerCase()],
-    id: String(index + 1),
+    id: String(++index),
     url: `http://localhost:8000/images/${index}.png`,
   }));
 
